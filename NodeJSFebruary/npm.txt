@@ -1,0 +1,20 @@
+npm, kullanıcıların oluşturdukları framerwork, modül vb. uygulamada kullanabilmek için kullanılır.
+npm aracılığı ile bir paketi yüklemek için terminale:
+npm install paketAdi  
+Sonrasında :
+npm init -y 
+yazılarak package.json kurulur.
+
+npm uninstall dosyaAdi
+ile paket kaldırılabilir.
+
+Eklediğimiz paketler package.json dosyasında dependencies kısmında görülür.
+Dependecies kısmındaki modüller hem geliştirme hem uygulamanın yürütülmesi esnasında kullanılırken
+  dev-dependecies'tekiler yalnızca geliştirme aşamasında kullanılır.
+Yalnızca geliştirilme esnasında kullanılan bu paketlerin dependecies kısmında bulunması 
+  uygulamayı gereksiz şişirebilir. Dev-dependencies'e' eklemek için:
+npm install dosyaAdi --save-dev
+
+Bir modülün eski halini yüklemek için dosyaAdi@versiyonNo
+
+npm outdated paketin eski ve yeni halini terminalde karşılaştırır.
